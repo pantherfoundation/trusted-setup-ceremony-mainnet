@@ -25,14 +25,17 @@ Contributors have multiple options to participate in the Ceremony, each with dif
   In this method, contributors run the ceremony scripts directly on their computer without requiring [Docker](https://docs.docker.com/get-docker/). However, in this case, both [Node.js](https://nodejs.org/en/download) and [AWS CLI](https://aws.amazon.com/cli/) must be installed locally. This setup is less isolated than running inside a Docker container but can be used if Docker is unavailable.
 
 ### General Requirements:
+
 Regardless of the chosen option, ensure you have:
+
 - **Basic familiarity with command-line operations** to execute the required commands.
 - [Git](https://git-scm.com/downloads) - For cloning and managing the repository.
 
 ### Dependencies Based on Your Chosen Option:
-| **Option**             | **Required Tools**                                                                                  |
-|------------------------|-----------------------------------------------------------------------------------------------------|
-| **A & B (Docker)**     | [Docker](https://docs.docker.com/get-docker/), [Git](https://git-scm.com/downloads)                 |
+
+| **Option**             | **Required Tools**                                                                                                      |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **A & B (Docker)**     | [Docker](https://docs.docker.com/get-docker/), [Git](https://git-scm.com/downloads)                                     |
 | **C (Without Docker)** | [Node.js](https://nodejs.org/en/download), [AWS CLI](https://aws.amazon.com/cli/), [Git](https://git-scm.com/downloads) |
 
 ## Security Best Practices
@@ -53,20 +56,22 @@ While following these recommendations provides maximum security, any contributio
 1. Fork this repository to your GitHub account
 2. Clone your fork:
    ```bash
-   git clone https://github.com/<Your-GitHub-Username>/trusted-setup-ceremony.git
-   cd trusted-setup-ceremony
+   git clone https://github.com/<Your-GitHub-Username>/trusted-setup-ceremony-mainnet.git
+   cd trusted-setup-ceremony-mainnet
    ```
 
 ### 2. Set Up Environment Variables
 
 1. **Create the `.env` File**
    Copy the provided `.env.example` file to create a new `.env` file:
+
    ```bash
    cp .env.example .env
    ```
 
 2. **Edit the `.env` File**
    Open the newly created `.env` file in your preferred text editor (e.g., `nano`, `vim`, or a GUI-based editor) and customize the values, especially by filling in your AWS credentials. For example:
+
    ```bash
    nano .env
    ```
@@ -84,14 +89,14 @@ Select **one** of the following contribution methods:
 #### Option A: Using Pre-built Docker Image
 
 ```bash
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony:latest contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet:latest contribute
 ```
 
 #### Option B: Build Docker Image Yourself (Recommended)
 
 ```bash
-docker build -t trusted-setup-ceremony .
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony contribute
+docker build -t trusted-setup-ceremony-mainnet .
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony-mainnet contribute
 ```
 
 #### Option C: Using Node.js Directly
@@ -104,6 +109,7 @@ npm run contribute
 ### 4. Interactive Contribution Process
 
 During your contribution, you will:
+
 - Provide your GitHub username for attribution
 - Generate entropy by typing randomly on your keyboard
 - Wait for the process to complete, which creates a new folder containing your contribution and attestation
@@ -118,15 +124,15 @@ Select **one** of the following verification methods:
 #### Option A: Using Pre-built Docker Image
 
 ```bash
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony:latest verify
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet:latest verify
 ```
 
 #### Option B: Build Docker Image Yourself (Recommended)
 
 ```bash
 # Skip the command on the next line if you have executed it in the previous step
-docker build -t trusted-setup-ceremony .
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony verify
+docker build -t trusted-setup-ceremony-mainnet .
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony-mainnet verify
 ```
 
 #### Option C: Using Node.js Directly
@@ -183,7 +189,6 @@ If standard contribution methods fail, consider:
 2. Sharing files via secure cloud storage (Google Drive, Dropbox)
 3. Using [Magic-Wormhole](https://magic-wormhole.readthedocs.io/) for secure file transfer
 
-
 ## Verification Guide
 
 This section provides detailed information about the verification process, including automatic file downloads, understanding results, and troubleshooting.
@@ -209,6 +214,7 @@ After the verification completes, a summary table will be displayed showing:
 - Details of any failed verifications for troubleshooting
 
 Example output:
+
 ```
 === VERIFICATION SUMMARY ===
 
@@ -244,18 +250,21 @@ The commands provided in this guide work natively on Linux and macOS systems.
 For Windows users, adjust commands as follows:
 
 **PowerShell:**
+
 ```powershell
-docker run--user $(id -u):$(id -g) --rm -it --env-file .env -v ${PWD}/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
+docker run--user $(id -u):$(id -g) --rm -it --env-file .env -v ${PWD}/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
 ```
 
 **Command Prompt:**
+
 ```cmd
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v %cd%/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v %cd%/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
 ```
 
 **For path-related issues**, use absolute paths:
+
 ```cmd
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\trusted-setup-contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\trusted-setup-contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
 ```
 
 ## Technical Details
@@ -265,8 +274,9 @@ docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\
 The official ceremony Docker image is available on Docker Hub:
 
 ```bash
-docker pull pantherprotocol/trusted-setup-ceremony:latest
+docker pull pantherprotocol/trusted-setup-ceremony-mainnet:latest
 ```
+
 You can specify a version by replacing `:latest` with a version tag (e.g., `:0.1`).
 
 ### Docker Command Parameters Explained
@@ -280,6 +290,7 @@ You can specify a version by replacing `:latest` with a version tag (e.g., `:0.1
 ### Verification Technical Details
 
 The verification process:
+
 1. Uses snarkjs `zkvi` command to verify each contribution
 2. Compares each contribution against the initial setup using the PTAU file
 3. Requires approximately 8GB RAM for verification
