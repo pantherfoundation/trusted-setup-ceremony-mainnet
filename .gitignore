@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+# Ignore large files stored in S3
+**/*.zkey
+**/*.r1cs
+**/*.ptau
+# Keep contributions metadata
+!**/contribution.txt
+!**/attestation.json
+# Ignore environment variables with sensitive credentials
+.env

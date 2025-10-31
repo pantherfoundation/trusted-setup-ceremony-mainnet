@@ -1,0 +1,27 @@
+{
+  "name": "trusted-setup",
+  "version": "1.0.0",
+  "description": "Trusted setup ceremony for ZK circuit",
+  "scripts": {
+    "build": "tsc",
+    "contribute": "ts-node src/contribute.ts",
+    "verify": "ts-node src/verify.ts",
+    "finalize": "ts-node src/finalize.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.758.0",
+    "@aws-sdk/s3-request-presigner": "^3.758.0",
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.1.1",
+    "readline-sync": "^1.4.10",
+    "snarkjs": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.15.11",
+    "@types/readline-sync": "^1.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
