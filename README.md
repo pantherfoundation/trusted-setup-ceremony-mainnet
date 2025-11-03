@@ -56,8 +56,8 @@ While following these recommendations provides maximum security, any contributio
 1. Fork this repository to your GitHub account
 2. Clone your fork:
    ```bash
-   git clone https://github.com/<Your-GitHub-Username>/trusted-setup-ceremony-mainnet.git
-   cd trusted-setup-ceremony-mainnet
+   git clone https://github.com/<Your-GitHub-Username>/trusted-setup-ceremony.git
+   cd trusted-setup-ceremony
    ```
 
 ### 2. Set Up Environment Variables
@@ -89,14 +89,14 @@ Select **one** of the following contribution methods:
 #### Option A: Using Pre-built Docker Image
 
 ```bash
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet:latest contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony:latest contribute
 ```
 
 #### Option B: Build Docker Image Yourself (Recommended)
 
 ```bash
-docker build -t trusted-setup-ceremony-mainnet .
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony-mainnet contribute
+docker build -t trusted-setup-ceremony .
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony contribute
 ```
 
 #### Option C: Using Node.js Directly
@@ -124,15 +124,15 @@ Select **one** of the following verification methods:
 #### Option A: Using Pre-built Docker Image
 
 ```bash
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet:latest verify
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony:latest verify
 ```
 
 #### Option B: Build Docker Image Yourself (Recommended)
 
 ```bash
 # Skip the command on the next line if you have executed it in the previous step
-docker build -t trusted-setup-ceremony-mainnet .
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony-mainnet verify
+docker build -t trusted-setup-ceremony .
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v $(pwd)/contributions:/app/contributions trusted-setup-ceremony verify
 ```
 
 #### Option C: Using Node.js Directly
@@ -252,19 +252,19 @@ For Windows users, adjust commands as follows:
 **PowerShell:**
 
 ```powershell
-docker run--user $(id -u):$(id -g) --rm -it --env-file .env -v ${PWD}/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
+docker run--user $(id -u):$(id -g) --rm -it --env-file .env -v ${PWD}/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
 ```
 
 **Command Prompt:**
 
 ```cmd
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v %cd%/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v %cd%/contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
 ```
 
 **For path-related issues**, use absolute paths:
 
 ```cmd
-docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\trusted-setup-contributions:/app/contributions pantherprotocol/trusted-setup-ceremony-mainnet contribute
+docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\trusted-setup-contributions:/app/contributions pantherprotocol/trusted-setup-ceremony contribute
 ```
 
 ## Technical Details
@@ -274,7 +274,7 @@ docker run --user $(id -u):$(id -g) --rm -it --env-file .env -v C:\full\path\to\
 The official ceremony Docker image is available on Docker Hub:
 
 ```bash
-docker pull pantherprotocol/trusted-setup-ceremony-mainnet:latest
+docker pull pantherprotocol/trusted-setup-ceremony:latest
 ```
 
 You can specify a version by replacing `:latest` with a version tag (e.g., `:0.1`).
