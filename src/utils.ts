@@ -143,9 +143,7 @@ function runAwsCommand(
 // S3 functions for downloading and uploading files
 export function downloadFromS3(prefix?: string): boolean {
   try {
-    const s3Path = prefix
-      ? `${S3_BUCKET_PATH}/mainnet-v1/${prefix}`
-      : S3_BUCKET_PATH;
+    const s3Path = asS3Path(prefix || "/");
     const localPath = prefix
       ? path.join(contributionRootFolder, prefix)
       : contributionRootFolder;
