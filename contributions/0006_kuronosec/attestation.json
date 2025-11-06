@@ -1,0 +1,27 @@
+{
+  "contributor": "kuronosec",
+  "contributionNumber": "0006",
+  "timestamp": "2025-11-06T18:29:07.384Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "8ba787101db17e6a9ca750aadd4da53e6d7b8c135b18a4e313b8ed867ab1bf1b"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "404c8ebcb67ae3724004b6a0467d6444582de19bf78ae274e3b4202f50fd7ec1"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "1f70781bd9a84d22548c5ca608a49ca7f180fefec54407950fd6070668dd4ae0"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "9da7907d96a3c42cf35bc393e157f2a502153d107b9cc9056f669357f56f1f74"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "51ca881320c8fb0799b91283e51532bc61725452ae369c69518d26b64dfbd9ad"
+    }
+  ]
+}
