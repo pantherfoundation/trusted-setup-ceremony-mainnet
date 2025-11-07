@@ -1,0 +1,27 @@
+{
+  "contributor": "truthixify",
+  "contributionNumber": "0008",
+  "timestamp": "2025-11-07T08:29:57.688Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "6c9d7f1d645ef97e2c27aaf2092bf658e95958bde6bff6bd55710d91eb3054e8"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "03da5266f72ed4772f05555fa9adf85a21c5811bd608ece961fb7e9540858887"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "59c7c5786151e0bf7ab15d18e640277c54a25f631f312fcbf85025fb75feea5b"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "6e72c49fdb8bf35c6b5c3ca77ec9c059b4ed970e29ef1a5ae4daf988677808d8"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "f82abdadf37553edfed7bd819522aca763702d9f29dd622dfb768f52a8449a0f"
+    }
+  ]
+}
