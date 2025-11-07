@@ -1,0 +1,27 @@
+{
+  "contributor": "javdatabase",
+  "contributionNumber": "0014",
+  "timestamp": "2025-11-07T16:03:03.105Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "0dfc6fd1383fdebd70d4795f2ad93808a7471e1c90f1254217b2c822af88c7d2"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "ec7a3c6174dfb28a3fdb3aa855e302f39bb96e6f60eacf7df3ff7919672a80fc"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "f99d6358a9a1e2990cd19db4b58532b8c91856c084df1a8375c8b5643eedf2c3"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "67e34e42e1eeb71dc0bb0e9da077ed60fb275b2358befc0c08a967975110867a"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "4ab34e73c2a9da59ed95b61a9daf6911e2d5a2c886ede7fa60c7a6594afd0810"
+    }
+  ]
+}
