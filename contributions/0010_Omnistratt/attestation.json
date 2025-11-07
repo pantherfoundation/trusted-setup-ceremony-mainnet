@@ -1,0 +1,27 @@
+{
+  "contributor": "Omnistratt",
+  "contributionNumber": "0010",
+  "timestamp": "2025-11-07T12:11:28.402Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "79f83db6436afdae4ee7c1cba00b97f73de2c5dcd541b9ce1cf1a476a2db4db3"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "8ea63f0e89b19cf6af6f39cc247e204362435990d75a684fb2675f2cf7b487aa"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "ed7a1f3b3373a30d9a696066072e54b8f98b8e9c88094333a276d791f9cc6dfc"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "6fe32332cbb8a6fd28799420b667fc0c1655be529ff9a6348afe901d8f083ce2"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "8d5fdc0d555626f3aa2d34d52e1ecafd8adfb53e040c5d8bb4c3864b6c09a894"
+    }
+  ]
+}
