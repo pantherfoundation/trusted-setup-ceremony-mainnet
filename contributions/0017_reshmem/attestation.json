@@ -1,0 +1,27 @@
+{
+  "contributor": "reshmem",
+  "contributionNumber": "0017",
+  "timestamp": "2025-11-09T20:35:00.738Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "cdf6ad46a7022a3d40e733ee172bedb259900eca8c5a23a95fc5ee7edb66efb4"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "5ef794644874361924d60bea11d0a5dacf3a9a5b0f4151b664a48cb5507a25d5"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "4fae607ac86da5377a0e333921758c85847f421e8b09946a0361cb84a29afdde"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "f7a91f0e1151b59344159007a2e0f8892b8da3ced8ee64c0cada13d4f67daab7"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "600318eb15989004bba16f33e99191a9a78126973abf926c9045605fae92cc52"
+    }
+  ]
+}
