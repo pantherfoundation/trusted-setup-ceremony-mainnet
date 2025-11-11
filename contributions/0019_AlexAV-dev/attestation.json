@@ -1,0 +1,27 @@
+{
+  "contributor": "AlexAV-dev",
+  "contributionNumber": "0019",
+  "timestamp": "2025-11-11T13:31:31.288Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "8812ad9350111b6001c742c5d519dbe34e53f4619ee3b1ca3a127422aa7284b7"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "ee1ede4c9ea9823f7b2e344cba2919699d397dd8bb5728ce7d7522266dca03f6"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "841ad98e0b1ebfd77c51ded587fd80d159fafcac7dc67d80da48e1a4e22781f8"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "8f3ddc01d8c9a1f30cfd57cca9d53619531aef38dfde4898bc0b3a937530184c"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "c3c681893ea4250636f941f01c91b7463cd5c5884554c1c9916fd87a93357464"
+    }
+  ]
+}
