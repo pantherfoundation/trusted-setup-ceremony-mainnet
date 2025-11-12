@@ -1,0 +1,27 @@
+{
+  "contributor": "hoanngothanh",
+  "contributionNumber": "0020",
+  "timestamp": "2025-11-12T03:44:21.680Z",
+  "files": [
+    {
+      "filename": "treeBatchUpdaterAndRootChecker.zkey",
+      "hash": "0e1810504b3dcc5b51ca1c3117dfd96368809a6038ee947202ba5b073184caeb"
+    },
+    {
+      "filename": "zAccountRegistrationV1.zkey",
+      "hash": "7334862396301f70a889864541404a18b1d940f4e4a252900d549e12a3117aea"
+    },
+    {
+      "filename": "zAccountRenewalV1.zkey",
+      "hash": "a76c7bb39479a35d58299e35203bd0711afa1090d8d72687719f855b45a2ece9"
+    },
+    {
+      "filename": "zSwapV1.zkey",
+      "hash": "8e829fb7e64ba8bca315eb57fc88dc08ef95389531c34d557c8ed9cabee849b4"
+    },
+    {
+      "filename": "zTransactionV1.zkey",
+      "hash": "4b892f39201e7f8311ff9615f54aa7ce520a0e975f7fc9b97ae73d7d5fdddf2d"
+    }
+  ]
+}
